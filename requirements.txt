@@ -1,0 +1,86 @@
+# FastAPI Backend Requirements for Specify System
+
+# Existing Specify system dependencies
+anthropic>=0.21.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Core FastAPI dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# WebSocket support
+websockets>=11.0.3
+
+# HTTP client for external APIs
+httpx>=0.25.0
+
+# Data validation and serialization
+email-validator>=2.0.0
+
+# Session and caching (optional Redis support)
+redis>=5.0.0
+
+# Background tasks and async support
+celery[redis]>=5.3.0  # Optional for advanced background processing
+
+# Authentication (for future use)
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# Database support (for future persistence)
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+
+# Monitoring and observability
+prometheus-client>=0.18.0
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+httpx-auth>=0.16.0  # For testing authenticated endpoints
+
+# Code quality
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# LLM integration
+openai>=1.0.0     # Alternative LLM provider
+requests>=2.31.0
+
+# Additional utilities
+structlog>=23.2.0  # Structured logging
+tenacity>=8.2.0    # Retry logic
+click>=8.1.0       # CLI utilities (if needed)
+rich>=13.6.0       # Rich text and progress bars
+
+# Security
+cryptography>=41.0.0
+bcrypt>=4.0.0
+
+# Performance monitoring
+psutil>=5.9.0
+
+# Configuration management
+pyyaml>=6.0
+toml>=0.10.2
+
+# Date/time utilities
+python-dateutil>=2.8.0
+
+# JSON utilities
+orjson>=3.9.0  # Faster JSON processing
+
+# Development server with auto-reload
+watchfiles>=0.20.0  # Used by uvicorn for file watching
+
+# Optional: Production WSGI server
+gunicorn>=21.2.0
