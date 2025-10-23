@@ -20,7 +20,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { ExecutionDAG, DAGNode, DAGEdge, ExecutionStatus } from '@/types'
-import { cn, getStatusColor, formatDuration } from '@/lib/utils'
+import { cn, formatDuration } from '@/lib/utils'
 import {
   Play,
   Pause,
