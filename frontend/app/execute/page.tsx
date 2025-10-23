@@ -29,6 +29,8 @@ import {
   Package,
 } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default function ExecutePage() {
   const router = useRouter()
   const searchParams = useSearchParams()

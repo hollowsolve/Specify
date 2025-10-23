@@ -20,6 +20,8 @@ import {
   Loader2,
 } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 const EXAMPLE_PROMPTS = [
   {
     title: "E-commerce Platform",

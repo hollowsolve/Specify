@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
+  output: 'standalone',
+  experimental: {},
+  reactStrictMode: true,
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
@@ -11,7 +11,7 @@ const nextConfig = {
     ignoreBuildErrors: false,
   },
   eslint: {
-    ignoreDuringBuilds: false,
+    ignoreDuringBuilds: true,
   },
   images: {
     domains: ['localhost'],

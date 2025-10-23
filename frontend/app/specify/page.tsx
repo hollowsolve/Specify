@@ -23,6 +23,8 @@ import {
   ArrowLeft,
 } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default function SpecifyPage() {
   const router = useRouter()
   const searchParams = useSearchParams()

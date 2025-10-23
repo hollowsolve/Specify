@@ -26,6 +26,8 @@ import {
   FileCheck,
 } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default function RefinePage() {
   const router = useRouter()
   const searchParams = useSearchParams()
