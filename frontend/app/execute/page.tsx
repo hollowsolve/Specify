@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -28,8 +30,6 @@ import {
   Zap,
   Package,
 } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
 
 export default function ExecutePage() {
   const router = useRouter()

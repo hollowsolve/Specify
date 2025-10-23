@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -22,8 +24,6 @@ import {
   Target,
   ArrowLeft,
 } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
 
 export default function SpecifyPage() {
   const router = useRouter()

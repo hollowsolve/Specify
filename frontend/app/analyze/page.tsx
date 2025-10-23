@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -19,8 +21,6 @@ import {
   FileText,
   Loader2,
 } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
 
 const EXAMPLE_PROMPTS = [
   {

@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -25,8 +27,6 @@ import {
   Sparkles,
   FileCheck,
 } from 'lucide-react'
-
-export const dynamic = 'force-dynamic'
 
 export default function RefinePage() {
   const router = useRouter()
