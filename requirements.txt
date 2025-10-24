@@ -62,6 +62,7 @@ structlog>=23.2.0  # Structured logging
 tenacity>=8.2.0    # Retry logic
 click>=8.1.0       # CLI utilities (if needed)
 rich>=13.6.0       # Rich text and progress bars
+questionary>=2.0.0 # Interactive prompts
 
 # Security
 cryptography>=41.0.0
