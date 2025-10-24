@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: specify-api
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "cd /opt/render/project/src && PYTHONPATH=/opt/render/project/src uvicorn api.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: SPECIFY_CORS_ORIGINS
+        value: "https://specify.gg,https://www.specify.gg,https://specify-git-main-noahs-projects-88f12ffe.vercel.app"
+      - key: SPECIFY_ENVIRONMENT
+        value: "production"
+      - key: PYTHON_VERSION
+        value: "3.12.0"
