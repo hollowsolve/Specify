@@ -17,6 +17,7 @@ websockets>=11.0.3
 httpx>=0.25.0
 
 # Data validation and serialization
+pydantic-settings>=2.0.0
 email-validator>=2.0.0
 
 # Session and caching (optional Redis support)
