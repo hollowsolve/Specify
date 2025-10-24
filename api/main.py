@@ -60,11 +60,9 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info("Starting Specify API backend...")
 
-    # Initialize session manager
-    await session_manager.initialize()
-
-    # Add session manager to app state
-    app.state.session_manager = session_manager
+    # Temporarily disable session manager for Railway debugging
+    # await session_manager.initialize()
+    # app.state.session_manager = session_manager
 
     logger.info("Specify API backend started successfully")
 
@@ -72,7 +70,7 @@ async def lifespan(app: FastAPI):
 
     # Shutdown
     logger.info("Shutting down Specify API backend...")
-    await session_manager.cleanup()
+    # await session_manager.cleanup()
     logger.info("Specify API backend shut down")
 
 
