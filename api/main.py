@@ -39,14 +39,20 @@ from api.routers import (
     websocket,
 )
 
-# Configure logging
+# Configure logging - force output to stdout for Railway
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout)
-    ]
+    ],
+    force=True
 )
+
+# Log immediately on module import
+print("=" * 50, flush=True)
+print("API MODULE LOADING", flush=True)
+print("=" * 50, flush=True)
 
 logger = logging.getLogger(__name__)
 
